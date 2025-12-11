@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Advanced Course Registration Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(#e3f2fd, #ffffff);
+        padding: 25px;
+    }
+    .container {
+        width: 550px;
+        margin: auto;
+        background: #fff;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 0 18px rgba(0,0,0,0.2);
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 6px;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #bbb;
+        border-radius: 6px;
+        font-size: 15px;
+    }
+    textarea { height: 70px; }
+
+    .two-col {
+        display: flex;
+        gap: 15px;
+    }
+    .two-col div { flex: 1; }
+
+    .radio-group, .check-group {
+        margin-bottom: 18px;
+    }
+
+    button {
+        padding: 12px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 17px;
+        width: 100%;
+    }
+    button:hover { background: #0056b3; }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2>Course Registration Form</h2>
+        <form>
+
+            <div class="two-col">
+                <div>
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter full name" />
+                </div>
+                <div>
+                    <label>Phone Number</label>
+                    <input type="text" placeholder="Enter phone number" />
+                </div>
+            </div>
+
+            <div class="two-col">
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter email" />
+                </div>
+                <div>
+                    <label>Date of Birth</label>
+                    <input type="date" />
+                </div>
+            </div>
+
+            <label>Parent / Guardian Name</label>
+            <input type="text" placeholder="Enter guardian name" />
+
+            <label>Qualification</label>
+            <select>
+                <option>Select</option>
+                <option>10th</option>
+                <option>12th</option>
+                <option>Diploma</option>
+                <option>Undergraduate</option>
+                <option>Postgraduate</option>
+            </select>
+
+            <label>Course Name</label>
+            <select>
+                <option>Select</option>
+                <option>Web Development</option>
+                <option>Python Programming</option>
+                <option>Data Science</option>
+                <option>UI/UX Designing</option>
+                <option>Cyber Security</option>
+            </select>
+
+            <label>Course Duration</label>
+            <select>
+                <option>Select</option>
+                <option>1 Month</option>
+                <option>3 Months</option>
+                <option>6 Months</option>
+                <option>1 Year</option>
+            </select>
+
+            <label>Batch Timing</label>
+            <select>
+                <option>Select Timing</option>
+                <option>9 AM - 11 AM</option>
+                <option>11 AM - 1 PM</option>
+                <option>2 PM - 4 PM</option>
+                <option>4 PM - 6 PM</option>
+            </select>
+
+            <label>Course Mode</label>
+            <div class="radio-group">
+                <input type="radio" name="mode" /> Online <br>
+                <input type="radio" name="mode" /> Offline
+            </div>
+
+            <label>Upload ID Proof</label>
+            <input type="file" />
+
+            <label>Upload Photo</label>
+            <input type="file" />
+
+            <label>Address</label>
+            <textarea placeholder="Enter your address"></textarea>
+
+            <label>Payment Method</label>
+            <select>
+                <option>Select</option>
+                <option>UPI</option>
+                <option>Credit Card</option>
+                <option>Debit Card</option>
+                <option>Net Banking</option>
+                <option>Cash</option>
+            </select>
+
+            <div class="check-group">
+                <input type="checkbox" /> I agree to the terms & conditions
+            </div>
+
+            <button type="submit">Register Now</button>
+        </form>
+    </div>
+</body>
+</html>
